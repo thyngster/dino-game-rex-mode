@@ -24,7 +24,7 @@ const getPixelsAtX = (canvas, x) => {
 
 const runRexMode = () => {
     // If more than 10 pixels at the specified x coordinate have a red component of 83
-    if (getPixelsAtX(canvas, 120).filter(Boolean).length > 2)
+    if (getPixelsAtX(canvas, 120).filter(Boolean).length > 10)
         simulateSpaceKeyPress();
 
     requestAnimationFrame(runRexMode);
